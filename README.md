@@ -72,6 +72,18 @@ I work on **ePuskesmas**, a **national-scale multi-tenant healthcare platform** 
 
 ---
 
+## 🏆 Showcase 5 — CoreHub: Feature Toggle & Release Management Platform
+
+**Problem.** Rolling out features across 7,000+ tenant deployments was risky and slow — no way to ship code behind a flag, no centralized release control, and no safe path to continuous delivery.
+
+**Solution.** I built **CoreHub** (Config Service / MKF), an internal **Feature Toggle & Release Management** platform — a full-stack app (Vue 3 + Pinia + PrimeVue frontend, ElysiaJS + Drizzle + PostgreSQL + Valkey backend) with RBAC, audit trails, and a tenant-aware toggle API. I also built the **PHP client library** (`feature-toggle-client`) that lets Laravel apps consume toggles with Redis caching.
+
+**Impact.** CoreHub enabled the team to adopt **Trunk-Based Development** — features ship behind toggles and are released centrally, so delivery is faster and safer. (TBD adoption was team-wide; my contribution was the platform that made it possible.)
+
+**Stack:** TypeScript · Vue 3 · ElysiaJS · Drizzle · PostgreSQL · Valkey · PHP (client library) · RBAC · Audit trail
+
+---
+
 ## Other notable work
 
 - **App-level data encryption** — base encryptor, toggle-gated, for sensitive credential fields.
